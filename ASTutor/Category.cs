@@ -60,8 +60,13 @@ namespace ASTutor
                 if (lstCategory[i].CategoryID == id)
                 {
                     lstCategory.RemoveAt(i);
+                    Console.Write("Delete successfully!!!");
                 }
-            }
+                else
+                {
+                    Console.Write("Not found!!!");
+                }
+            }            
             Console.ReadKey();
         }
 
@@ -76,6 +81,10 @@ namespace ASTutor
                 if (lstCategory[i].CategoryID == id)
                 {
                     Console.WriteLine("Name: " + lstCategory[i].CategoryName);
+                }
+                else
+                {
+                    Console.Write("Not found!!!");
                 }
             }
             Console.ReadKey();

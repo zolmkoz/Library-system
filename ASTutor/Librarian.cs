@@ -87,8 +87,13 @@ namespace ASTutor
                 if (lstLibarian[i].EmployeeID == id)
                 {
                     lstLibarian.RemoveAt(i);
+                    Console.Write("Delete successfully!!!");
                 }
-            }
+                else
+                {
+                    Console.Write("Not found!!!");
+                }
+            }           
             Console.ReadKey();
         }
 
@@ -106,6 +111,10 @@ namespace ASTutor
                     Console.WriteLine("Phone: " + lstLibarian[i].PhonePerson);
                     Console.WriteLine("City: " + lstLibarian[i].CityPerson);
                     Console.WriteLine("Status:" + lstLibarian[i].Status);
+                }
+                else
+                {
+                    Console.Write("Not found!!!");
                 }
             }
             Console.ReadKey();

@@ -70,8 +70,14 @@ namespace ASTutor
                 if (lstBook[i].BookID == id)
                 {
                     lstBook.RemoveAt(i);
+                    Console.Write("Delete successfully!!!");
+                }
+                else
+                {
+                    Console.Write("Not found!!!");
                 }
             }
+            
             Console.ReadKey();
         }
 
@@ -87,6 +93,10 @@ namespace ASTutor
                 {
                     Console.WriteLine("Name: " + lstBook[i].BookName);
                     Console.WriteLine("Author: " + lstBook[i].Author);
+                }
+                else
+                {
+                    Console.Write("Not found!!!");
                 }
             }
             Console.ReadKey();

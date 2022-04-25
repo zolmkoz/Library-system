@@ -75,8 +75,13 @@ namespace ASTutor
                 if (lstReader[i].ReaderID == id)
                 {
                     lstReader.RemoveAt(i);
+                    Console.Write("Delete successfully!!!");
                 }
-            }
+                else
+                {
+                    Console.Write("Not found!!!");
+                }
+            }           
             Console.ReadKey();
         }
 
@@ -93,6 +98,10 @@ namespace ASTutor
                     Console.WriteLine("Name: " + lstReader[i].NamePerson);
                     Console.WriteLine("Phone: " + lstReader[i].PhonePerson);
                     Console.WriteLine("City: " + lstReader[i].CityPerson);
+                }
+                else
+                {
+                    Console.Write("Not found!!!");
                 }
             }
             Console.ReadKey();
